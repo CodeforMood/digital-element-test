@@ -1,7 +1,111 @@
-$font-size: 1rem;
-$font-color: lch(28 99 35);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
-html {
-  font-size: $font-size;
-  color: $font-color;
+@font-face { 
+  font-family: "GilroyBold";
+  src: url("./fonts/GilroyBold.ttf") format("truetype");
+  font-style: bold;
+  font-weight: 400;
+}
+
+@font-face { 
+  font-family: GilroyRegular;
+  src: url("./fonts/GilroyRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+.intro {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #98C3E8 -90%, white 25%);
+  background-size: cover;
+ }
+
+ @media screen and (min-width: 1367px) and (max-width: 1920px) {
+  .intro-content {
+    position: absolute;
+    top: 189px;
+    left: 212px;
+    max-width: 510px;
+  }
+  .intro-image {
+    margin-top: 12px;
+    margin-left:655px;
+    margin-bottom: 55px;
+    max-width: 100%;
+    height: auto;
+  }
+ }
+ @media screen and (max-width: 1366px) {
+  .intro-content {
+    margin: 189px 100px;
+  }
+}
+
+.navigation-list {
+  display: flex;
+  padding: 0;
+  margin: 40px 83px 5px 83px;
+  list-style: none;
+	justify-content: space-between;
+	align-items: center;
+ }
+
+.intro-content__header {
+  font-family: "GilroyBold";
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 74px;
+  color: #1F3F68;
+  margin-bottom: 32px;
+ }
+
+ .intro-content__text {
+	  font-family: GilroyRegular;
+	  font-size: 16px;
+	  line-height: 26px;
+	  color: #1F3F68;
+	  margin-bottom: 71px;
+    max-width: 425px;
+  }
+
+.intro-content__button {
+	font-family: GilroyRegular;
+  text-align: center;
+	font-size: 16px;
+	line-height: 26px;
+	color: white;
+	background-color: #5A98D0;
+  border-radius: 10px;
+  border: none;
+	padding: 15px 48px 15px 48px;
+}
+
+.what-we-do__header {
+  font-family: GilroyBold;
+	font-size: 36px;
+	line-height: 46px;
+  color: #1F3F68;
+  margin-left: 213px;
+  margin-top: 192px;
+  max-width: 358px;
 }

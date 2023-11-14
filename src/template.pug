@@ -4,4 +4,26 @@ html(lang= 'ru')
     meta(charset='utf-8')
     title= 'Быстрый запуск Webpack'
   body
-    p Файл откомпилирован шаблонизатором Pug
+
+    nav.navigation
+      ul.navigation-list 
+        li.navigation-list__toggle-element
+          img(src=require('./images/logo.svg') width="48px" height="48px") 
+        li.navigation-list__burger-menu-element
+          img(src=require('./images/menu.svg') width="32px" height="32px")
+    div.intro
+      div.intro-content
+        p.intro-content__header New Automation <br /> Tool for Your Home
+        p.intro-content__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.
+        button.intro-content__button See Our Project
+      img.intro-image(src=require('./images/intro-figure.svg') width="687" height="612")
+        
+    div.what-we-do
+      p.what-we-do__header What we do to help our client grow in digital era
+      ul.what-we-do__list
+        li.what-we-do__list-item
+        li.what-we-do__list-item
+        li.what-we-do__list-item
+    div.our-clients 
+    footer
+
